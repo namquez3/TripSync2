@@ -1,0 +1,16 @@
+{
+  "name": "tripsync2-backend",
+  "version": "1.0.0",
+  "description": "TripSync2 Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
+

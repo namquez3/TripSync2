@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
+# TripSync2
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+TripSync2 is a monorepo containing both the frontend and backend applications.
 
-## Get started
+## Project Structure
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+TripSync2/
+├── frontend/     # React Native/Expo frontend application
+├── backend/      # Backend API server
+└── package.json  # Root package.json for monorepo management
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+### Install Dependencies
 
-To learn more about developing your project with Expo, look at the following resources:
+Install all dependencies for both frontend and backend:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run install:all
+```
 
-## Join the community
+Or install them separately:
 
-Join our community of developers creating universal apps.
+```bash
+# Frontend
+cd frontend
+npm install
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Backend
+cd backend
+npm install
+```
+
+### Running the Applications
+
+#### Frontend (React Native/Expo)
+
+From the root directory:
+```bash
+npm run frontend:start      # Start Expo dev server
+npm run frontend:android    # Run on Android
+npm run frontend:ios        # Run on iOS
+npm run frontend:web        # Run on web
+```
+
+Or from the frontend directory:
+```bash
+cd frontend
+npm start
+```
+
+#### Backend
+
+From the root directory:
+```bash
+npm run backend:start      # Start production server
+npm run backend:dev         # Start development server with nodemon
+```
+
+Or from the backend directory:
+```bash
+cd backend
+npm start      # Production
+npm run dev    # Development
+```
+
+## Frontend
+
+The frontend is built with React Native and Expo. See `frontend/README.md` for more details.
+
+## Backend
+
+The backend API server. See `backend/README.md` for more details.
