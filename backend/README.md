@@ -4,7 +4,7 @@ Backend API for TripSync2 application.
 
 ## Setup
 
-1. Install dependencies:
+1. Install dependencies (this will install Express and other required packages):
 ```bash
 npm install
 ```
